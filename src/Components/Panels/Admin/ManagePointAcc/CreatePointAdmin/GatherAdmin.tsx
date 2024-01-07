@@ -45,7 +45,7 @@ export default function GatherAdmin() {
 
     try {
       const result = await axios.post(
-        "http://localhost:3005/api/v1/users/addWarehouseAdmin",
+        "https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/users/addWarehouseAdmin",
         data
       );
       window.alert("Đã tạo thành công!");

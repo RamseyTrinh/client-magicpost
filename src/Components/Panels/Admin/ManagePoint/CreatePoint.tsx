@@ -32,7 +32,7 @@ export default function ManagePoint() {
 
     try {
       const result = await axios.post(
-        "http://localhost:3005/api/v1/transactionPoint/newPoint",
+        "https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/transactionPoint/newPoint",
         data
       );
       window.alert("Đã tạo thành công!");

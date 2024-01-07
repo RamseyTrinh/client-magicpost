@@ -62,7 +62,7 @@ export default function Form() {
 
     try {
       const result = await axios.post(
-        "http://localhost:3005/api/v1/packages/create",
+        "https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/packages/create",
         data
       );
       setPkgId(result.data.package.packagesId);

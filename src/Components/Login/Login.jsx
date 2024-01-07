@@ -33,7 +33,10 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3005/api/v1/users/login", { email, password })
+      .post(
+        "https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/users/login",
+        { email, password }
+      )
       .then((result) => {
         // console.log(result);
         if (result.status === 200) {

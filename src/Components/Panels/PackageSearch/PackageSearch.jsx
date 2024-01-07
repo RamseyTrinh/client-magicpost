@@ -32,7 +32,7 @@ export default function PackageSearch() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3005/api/v1/packages/${pkgId}`
+          `https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/packages/${pkgId}`
         );
         if (!response.ok) {
           throw new Error(`Failed to fetch data. Status: ${response.status}`);

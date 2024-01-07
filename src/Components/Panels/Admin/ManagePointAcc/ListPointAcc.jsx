@@ -16,7 +16,9 @@ export default function ListPointAcc() {
   useEffect(() => {
     const fetchData = () => {
       if (category === 1) {
-        fetch("http://localhost:3005/api/v1/users/allManager/transaction")
+        fetch(
+          "https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/users/allManager/transaction"
+        )
           .then((response) => {
             return response.json();
           })
@@ -36,7 +38,9 @@ export default function ListPointAcc() {
           });
       }
       if (category === 2) {
-        fetch("http://localhost:3005/api/v1/users/allManager/warehouse")
+        fetch(
+          "https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/users/allManager/warehouse"
+        )
           .then((response) => {
             return response.json();
           })
@@ -86,7 +90,7 @@ export default function ListPointAcc() {
     if (isConfirmed) {
       try {
         const result = await axios.delete(
-          `http://localhost:3005/api/v1/users/delete/${userId}`
+          `https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/users/delete/${userId}`
         );
         console.log(result);
         fetchData();
@@ -98,7 +102,9 @@ export default function ListPointAcc() {
 
   const fetchData = () => {
     if (category === 1) {
-      fetch("http://localhost:3005/api/v1/users/allManager/transaction")
+      fetch(
+        "https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/users/allManager/transaction"
+      )
         .then((response) => {
           return response.json();
         })
@@ -118,7 +124,9 @@ export default function ListPointAcc() {
         });
     }
     if (category === 2) {
-      fetch("http://localhost:3005/api/v1/users/allManager/warehouse")
+      fetch(
+        "https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/users/allManager/warehouse"
+      )
         .then((response) => {
           return response.json();
         })

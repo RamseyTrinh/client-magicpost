@@ -18,15 +18,15 @@ export default function DataTable() {
 
   const confirmApi =
     category === 1
-      ? "http://localhost:3005/api/v1/order/warehouseToTransaction"
+      ? "https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/order/warehouseToTransaction"
       : category === 2
-      ? "http://localhost:3005/api/v1/order/orderSuccess"
+      ? "https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/order/orderSuccess"
       : "";
 
   const fetchData = () => {
     if (category === 1) {
       fetch(
-        `http://localhost:3005/api/v1/order/packagesIdRequireTransactionReceive/${user.location}`
+        `https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/order/packagesIdRequireTransactionReceive/${user.location}`
       )
         .then((response) => {
           return response.json();
@@ -43,7 +43,7 @@ export default function DataTable() {
     }
     if (category === 2) {
       fetch(
-        `http://localhost:3005/api/v1/order/packagesIdRequireReceiver/${user.location}`
+        `https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/order/packagesIdRequireReceiver/${user.location}`
       )
         .then((response) => {
           return response.json();

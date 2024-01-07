@@ -17,7 +17,7 @@ export default function StaffStatistics() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3005/api/v1/users/allTransactionStaff/${user.location}`
+          `https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/users/allTransactionStaff/${user.location}`
         );
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -74,7 +74,7 @@ export default function StaffStatistics() {
     if (isConfirmed) {
       try {
         const result = await axios.delete(
-          `http://localhost:3005/api/v1/users/delete/${userId}`
+          `https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/users/delete/${userId}`
         );
         console.log(result);
         fetchData();
@@ -86,7 +86,7 @@ export default function StaffStatistics() {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3005/api/v1/users/allTransactionStaff/${user.location}`
+        `https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/users/allTransactionStaff/${user.location}`
       );
 
       if (!response.ok) {

@@ -18,7 +18,7 @@ export default function DataTable() {
     const fetchData = () => {
       if (category === 1) {
         fetch(
-          `http://localhost:3005/api/v1/order/packagesSuccess/${user.location}`
+          `https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/order/packagesSuccess/${user.location}`
         )
           .then((response) => {
             return response.json();
@@ -34,7 +34,7 @@ export default function DataTable() {
       }
       if (category === 2) {
         fetch(
-          `http://localhost:3005/api/v1/order/packagesFail/${user.location}`
+          `https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/order/packagesFail/${user.location}`
         )
           .then((response) => {
             return response.json();

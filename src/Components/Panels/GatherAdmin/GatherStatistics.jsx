@@ -13,7 +13,9 @@ export default function GatherStatistics() {
 
   useEffect(() => {
     const fetchData = () => {
-      fetch(`http://localhost:3005/api/v1/order/currentPoint/${user.location}`)
+      fetch(
+        `https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/order/currentPoint/${user.location}`
+      )
         .then((response) => {
           return response.json();
         })

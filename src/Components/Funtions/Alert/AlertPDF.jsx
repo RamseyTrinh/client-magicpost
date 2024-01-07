@@ -65,7 +65,9 @@ export default function AlertDialogSlide({ pkgId }) {
         fullWidth
         style={{ fontWeight: "bold", background: "#14507a" }}
         onClick={() => {
-          fetch(`http://localhost:3005/api/v1/packages/${pkgId}`)
+          fetch(
+            `https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/packages/${pkgId}`
+          )
             .then((response) => {
               return response.json();
             })

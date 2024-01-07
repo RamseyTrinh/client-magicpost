@@ -25,7 +25,7 @@ export default function Gather() {
   useEffect(() => {
     const fetchData = () => {
       fetch(
-        `http://localhost:3005/api/v1/order/packagesIdSendByTransactionReceive/${user.location}`
+        `https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/order/packagesIdSendByTransactionReceive/${user.location}`
       )
         .then((response) => {
           return response.json();
@@ -49,7 +49,7 @@ export default function Gather() {
 
     try {
       const result = await axios.patch(
-        "http://localhost:3005/api/v1/order/transportingPackages",
+        "https://ramseytrinh-magicpost-7ed53u57vq-de.a.run.app/api/v1/order/transportingPackages",
         { packagesId: pkgId }
       );
       console.log(result);
